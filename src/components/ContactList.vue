@@ -10,7 +10,6 @@
     </table>
   </div>
 </template>
-
 <script>
   import ContactItem from './ContactItem'
 
@@ -18,11 +17,9 @@
     components: {
       ContactItem
     },
-    methods: {
-    }
+    methods: {}
   }
 </script>
-
 <style scoped>
   table {
     display: inline;

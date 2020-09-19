@@ -18,7 +18,6 @@
         </td>
     </tr>
 </template>
-
 <script>
     export default {
         props: ['contact'],
@@ -29,9 +28,7 @@
             removeContact(id) {
                 if (confirm(`Confirm delete contact?`)) {
                     return this.$store.commit('contact_del', id)
-                } else {
-                    return false;
-                }
+                } else return false
             },
             router(el) {
             }
@@ -45,13 +42,11 @@
         cursor: pointer;
         color: cornflowerblue;
     }
-
     .routerlink {
         text-decoration: none;
         font-style: italic;
         color: #2c3e50;
     }
-
     .routerlink:hover {
         text-decoration: none;
         cursor: pointer;

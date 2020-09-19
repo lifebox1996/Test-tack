@@ -43,8 +43,6 @@ export default new Vuex.Store({
         },
         attribute_edit(state, payload) {
             state.allContacts[payload.id][payload.attribute] = payload.newValue
-
-
         },
         update_copy(state, payload) {
             state.contact_backup = JSON.parse(JSON.stringify(state.allContacts[payload.id]))
