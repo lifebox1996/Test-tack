@@ -12,7 +12,7 @@ export default new Router({
       component: Home
     },
     {
-      path: '/ContactInfo/:id',
+      path: '../ContactInfo/:id',
       name: 'ContactInfo',
       component: () => import('./views/ContactInfo'),
       props: true
